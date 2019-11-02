@@ -1,14 +1,12 @@
-{% set name = "pyfim" %}
 {% set version = "6.28" %}
-{% set sha256 = "3818c0a5053ccf6e97855662df8cbd6067bfd7f2628f1dc98f8318b001f560f4" %}
 
 package:
-  name: {{ name|lower }}
+  name: pyfim
   version: {{ version }}
 
 source:
-  url: http://www.borgelt.net/src/{{ name }}.tar.gz
-  sha256: {{ sha256 }}
+  url: http://www.borgelt.net/src/pyfim.tar.gz
+  sha256: d9727f3c4bc29977f22a2bf45f828fd1275dc0dc959464313f13b72d2f3d0fd6
 
 build:
   number: 1000
