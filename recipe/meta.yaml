@@ -6,10 +6,10 @@ package:
 
 source:
   url: http://www.borgelt.net/src/pyfim.tar.gz
-  sha256: d9727f3c4bc29977f22a2bf45f828fd1275dc0dc959464313f13b72d2f3d0fd6
+  sha256: 780d764e50ba6955f236754388a4eba64338c90e52a8fb22aba18e8516e5c14e
 
 build:
-  number: 1000
+  number: 1001
   script:
     - python setup.py build_ext --include-dirs=%PREFIX%\include --library-dirs=%PREFIX%\lib  # [win]
     - python setup.py build_ext --include-dirs=$PREFIX/include --library-dirs=$PREFIX/lib  # [not win]
