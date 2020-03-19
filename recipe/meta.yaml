@@ -9,7 +9,7 @@ source:
   sha256: d9727f3c4bc29977f22a2bf45f828fd1275dc0dc959464313f13b72d2f3d0fd6
 
 build:
-  number: 1000
+  number: 1001
   script:
     - python setup.py build_ext --include-dirs=%PREFIX%\include --library-dirs=%PREFIX%\lib  # [win]
     - python setup.py build_ext --include-dirs=$PREFIX/include --library-dirs=$PREFIX/lib  # [not win]
