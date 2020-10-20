@@ -6,7 +6,7 @@ package:
 
 source:
   url: http://www.borgelt.net/src/pyfim.tar.gz
-  sha256: 780d764e50ba6955f236754388a4eba64338c90e52a8fb22aba18e8516e5c14e
+  sha256: f92acbb08d183ffc241b45716c693d04b7ae626a1c7723af0704accf7f884246
 
 build:
   number: 1002
