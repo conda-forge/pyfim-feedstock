@@ -21,7 +21,6 @@ requirements:
   host:
     - python
     - pip
-    - msinttypes  # [win and py27]
   run:
     - python
 
