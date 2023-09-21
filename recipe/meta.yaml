@@ -1,4 +1,4 @@
-{% set version = "6.28" %}
+{% set version = "6.30" %}
 
 package:
   name: pyfim
@@ -6,10 +6,10 @@ package:
 
 source:
   url: http://www.borgelt.net/src/pyfim.tar.gz
-  sha256: f92acbb08d183ffc241b45716c693d04b7ae626a1c7723af0704accf7f884246
+  sha256: ff24d48f2527fddc6c09dc649d302efc30bd5d877f71f5c09316ad1389279d52
 
 build:
-  number: 1003
+  number: 0
   script:
     - python setup.py build_ext --include-dirs=%PREFIX%\include --library-dirs=%PREFIX%\lib  # [win]
     - python setup.py build_ext --include-dirs=$PREFIX/include --library-dirs=$PREFIX/lib  # [not win]
