@@ -9,7 +9,7 @@ source:
   sha256: ff24d48f2527fddc6c09dc649d302efc30bd5d877f71f5c09316ad1389279d52
 
 build:
-  number: 1
+  number: 2
   script:
     - python setup.py build_ext --include-dirs=%PREFIX%\include --library-dirs=%PREFIX%\lib  # [win]
     - python setup.py build_ext --include-dirs=$PREFIX/include --library-dirs=$PREFIX/lib  # [not win]
@@ -18,6 +18,7 @@ build:
 requirements:
   build:
     - {{ compiler('c') }}
+    - {{ stdlib("c") }}
   host:
     - python
     - pip
